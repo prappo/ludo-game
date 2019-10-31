@@ -1,0 +1,64 @@
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script type="text/javascript" src="<%= baseUrl %>createNickname.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="<%= baseUrl %>game.css"/>
+    <script language="JavaScript">var baseUrl = "<%= baseUrl %>"</script>
+    <title>Pro Ludo Club</title>
+    <style>
+        body {
+            height: 100%;
+            background-size: cover;
+            background: url("assets/img/bg3.jpg") no-repeat center center fixed;
+        }
+    </style>
+</head>
+<body>
+
+
+<div class="container h-100">
+    <div class="row h-100 justify-content-center align-items-center">
+        <form class="col-12">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="lobby-box col-md-6 col-xs-12">
+                    <div class="card">
+                        <div class="card-header"><h3 class="text-center">Type your name</h3></div>
+                        <div class="card-body">
+                            <div id="form">
+
+
+                                <div class="input-group mb-3">
+                                    <input type="text" id="playerName" name="playerName" class="form-control" placeholder="Nickname" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <div class="input-group-append">
+                                        <button id="createNickname" class="btn btn-outline-secondary" type="button" id="button-addon2">Join Now</button>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-row align-items-center">
+                                    <div class="col-sm-12">
+                                        <label id="nicknameError" style="color:red; font-weight: bold;"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+</body>

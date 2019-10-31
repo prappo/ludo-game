@@ -1,0 +1,82 @@
+<html>
+<head>
+    <script language="JavaScript">var baseUrl = "<%= baseUrl %>"</script>
+    <script src="<%= baseUrl %>libs/jquery.min.js"></script>
+    <script src="<%= baseUrl %>libs/socket.io.js"></script>
+    <script type="text/javascript" src="<%= baseUrl %>lobby.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="<%= baseUrl %>game.css"/>
+    <title>ProLudoClub - Lobby</title>
+    <style>
+        body {
+            height: 100%;
+            background-size: cover;
+            background: url("assets/img/bg2.jpg") no-repeat center center fixed;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="card-header">
+            <div style="padding:0; align-content: center; ">
+                <button style="width: 150px" id="logoutBtn">Logout</button>
+                <div>
+                    <h1>Pro Ludo Club</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+            <div class="card card-default">
+                <div class="card-header"><b>Players in lobby</b> </div>
+                <div class="card-body">
+                    <div id="players"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12">
+            <div class="card card-default">
+                <div class="card-header"><b>Ready Players</b></div>
+                <div class="card-body">
+                    <div id="readyPlayers"></div>
+                </div>
+                <div class="card-footer">
+                    <div>
+                        <button id="startGame">Start Game</button>
+                        <button id="readyBtn">Ready</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-xs-12">
+            <div class="card card-default">
+                <div class="card-header"><b>Ongoing games</b></div>
+                <div id="ongoingGames" class="card-body">
+
+                </div>
+                <div class="card-footer">
+                    Click on a game to spectate.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 col-xs-12">
+            <div class="card card-default">
+                <div class="card-header"><b>Previous games</b></div>
+                <div id="previousGames" class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
