@@ -31,20 +31,29 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
-<!--            <li class="nav-item">-->
-<!--                <a class="nav-link" href="#">Pricing</a>-->
-<!--            </li>-->
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#previousGamesModal" href="#">Previous Games</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Notice</a>
+            </li>
+            <li class="nav-item">
+
+            </li>
         </ul>
+        <span class="navbar-text"> <button class="btn btn-danger btn-block" id="logoutBtn"> Logout</button> </span>
+        <span class="navbar-text">  </span>
         <span class="navbar-text">
-      Server Status : Online
+     [ Server Status : <span class="badge badge-success">Online</span> ]
     </span>
     </div>
 </nav>
 
 <div class="container">
-    <marquee style="color: chartreuse">Welcome to Pro Ludo Club</marquee>
+
     <div style="padding:20px" class="row">
-        <button class="btn btn-danger btn-block" id="logoutBtn"> Logout</button>
+        <marquee style="color: chartreuse">Welcome to Pro Ludo Club</marquee>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-12">
@@ -73,7 +82,7 @@
 
         <div class="col-md-4 col-xs-12">
             <div class="card card-default">
-                <div class="card-header"><b>Ongoing games</b></div>
+                <div class="card-header"><img src="assets/img/ongoing.png"> <b>Ongoing games</b></div>
                 <div id="ongoingGames" class="card-body">
 
                 </div>
@@ -85,12 +94,31 @@
     </div>
 
     <div class="row">
-        <div class="col-md-4 col-xs-12">
-            <div class="card card-default">
-                <div class="card-header"><b>Previous games</b></div>
-                <div id="previousGames" class="card-body">
 
+    </div>
+</div>
+
+
+<div class="modal fade" id="previousGamesModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Previous Games</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="col-md-12 col-xs-12">
+                    <div class="card card-default">
+                        <div id="previousGames" class="card-body">
+
+                        </div>
+                    </div>
                 </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
