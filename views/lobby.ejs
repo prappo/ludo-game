@@ -15,22 +15,25 @@
         body {
             height: 100%;
             background-size: cover;
-            background: url("assets/img/bg2.jpg") no-repeat center center fixed;
+            background: url("assets/img/bg5.jpg") no-repeat center center fixed;
         }
     </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Pro Ludo Club</a>
+    <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Pro Ludo Club
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
+<!--            <li class="nav-item">-->
+<!--                <a class="nav-link" href="#">Pricing</a>-->
+<!--            </li>-->
         </ul>
         <span class="navbar-text">
       Server Status : Online
@@ -39,13 +42,14 @@
 </nav>
 
 <div class="container">
+    <marquee style="color: chartreuse">Welcome to Pro Ludo Club</marquee>
     <div style="padding:20px" class="row">
         <button class="btn btn-danger btn-block" id="logoutBtn"> Logout</button>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-12">
             <div class="card card-default">
-                <div class="card-header"><b>Players in lobby</b></div>
+                <div class="card-header"><img src="assets/img/PlayersInLobby.png"><b>Players in lobby</b></div>
                 <div class="card-body">
                     <div id="players"></div>
                 </div>
@@ -54,7 +58,7 @@
 
         <div class="col-md-4 col-xs-12">
             <div class="card card-default">
-                <div class="card-header"><b>Ready Players</b></div>
+                <div class="card-header"><img src="assets/img/ReadyPlayerIcon.png"> <b>Ready Players</b></div>
                 <div class="card-body">
                     <div id="readyPlayers"></div>
                 </div>
@@ -74,7 +78,7 @@
 
                 </div>
                 <div class="card-footer">
-                    Click on a game to spectate.
+                    <h5>Click on a game to spectate.</h5>
                 </div>
             </div>
         </div>

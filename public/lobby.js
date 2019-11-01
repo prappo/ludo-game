@@ -55,7 +55,8 @@ function updateLobby() {
                 }
                 jQuery('<div/>', {
                     class: 'well',
-                    text: resultData.players[i].playerName
+                    text: resultData.players[i].playerName,
+                    html: "<img height='30' width='30' src='assets/img/lobbyPlayerIcon.png'> " + resultData.players[i].playerName
                 }).appendTo($((resultData.players[i].ready) ? "#readyPlayers" : "#players"));
             }
 
