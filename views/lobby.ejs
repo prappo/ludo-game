@@ -4,8 +4,11 @@
     <script src="<%= baseUrl %>libs/jquery.min.js"></script>
     <script src="<%= baseUrl %>libs/socket.io.js"></script>
     <script type="text/javascript" src="<%= baseUrl %>lobby.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o"
+            crossorigin="anonymous"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="<%= baseUrl %>game.css"/>
     <title>ProLudoClub - Lobby</title>
     <style>
@@ -17,22 +20,32 @@
     </style>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Pro Ludo Club</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+        </ul>
+        <span class="navbar-text">
+      Server Status : Online
+    </span>
+    </div>
+</nav>
 
 <div class="container">
-    <div class="row">
-        <div class="card-header">
-            <div style="padding:0; align-content: center; ">
-                <button style="width: 150px" id="logoutBtn">Logout</button>
-                <div>
-                    <h1>Pro Ludo Club</h1>
-                </div>
-            </div>
-        </div>
+    <div style="padding:20px" class="row">
+        <button class="btn btn-danger btn-block" id="logoutBtn"> Logout</button>
     </div>
     <div class="row">
         <div class="col-md-4 col-xs-12">
             <div class="card card-default">
-                <div class="card-header"><b>Players in lobby</b> </div>
+                <div class="card-header"><b>Players in lobby</b></div>
                 <div class="card-body">
                     <div id="players"></div>
                 </div>
@@ -47,8 +60,8 @@
                 </div>
                 <div class="card-footer">
                     <div>
-                        <button id="startGame">Start Game</button>
-                        <button id="readyBtn">Ready</button>
+                        <button class="btn btn-success" id="startGame">Start Game</button>
+                        <button class="btn btn-primary" id="readyBtn">Ready</button>
                     </div>
                 </div>
             </div>
