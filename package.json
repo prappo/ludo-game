@@ -18,7 +18,7 @@
 		"ejs": "^2.6.1",
 		"express": "^4.16.4",
 		"fast-json-patch": "^2.0.7",
-		"jquery": "^3.4.1",
+		"jquery": "^3.5.0",
 		"jsonwebtoken": "^8.3.0",
 		"net": "^1.0.2",
 		"package.json": "^2.0.1",
