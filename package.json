@@ -8,7 +8,7 @@
 	"description": "Online multiplayer Ludo made with Node.js.",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/trygve55/NodeLudo.git"
+		"url": ""
 	},
 	"dependencies": {
 		"body-parser": "^1.18.3",
